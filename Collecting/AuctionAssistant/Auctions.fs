@@ -1,8 +1,11 @@
 ﻿module Auctions
 
+open Philately
+open Numismatic
+
     type Amount = decimal
-    type Collectable =    Stamp of Philately.Stamp
-                        | Coin of Numismatic.Coin                        
+    type Collectable =    Stamp of Stamp
+                        | Coin of Coin                        
                         | Map
 
 

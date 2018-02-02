@@ -1,9 +1,13 @@
 ﻿module Numismatic
 
-     type Area = Egeo| IsoleIonie | Sicilia
-     type Catalogue = {Name: string; Year: int}
-     type NumberType = Single| Set
-     type CatalogueNumber = NumberType of int
-     type CatalogueReference = Catalogue of CatalogueNumber
-     type Coin = {Area: Area; CatalogueNumber: CatalogueNumber; Year:int; Description: string; }  
+open Kernel
 
+     type Area = Italia| Svizzera | GranBretagna
+     type Catalogue = {Name: string; Year: int}
+     type CatalogueNumber = Single of int
+                           | Set of int
+     type CatalogueReference = Catalogue * Area * CatalogueNumber
+     type Coin = {CatalogueNumber: CatalogueNumber; Year:int; Description: string; }  
+
+     let sameCoin (fst:Coin) (snd:Coin) =
+        same fst.CatalogueNumber snd.CatalogueNumber
