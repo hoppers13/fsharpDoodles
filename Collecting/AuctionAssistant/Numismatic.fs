@@ -7,7 +7,7 @@ open Kernel
      type CatalogueNumber = Single of int
                            | Set of int
      type CatalogueReference = Catalogue * Area * CatalogueNumber
-     type Coin = {CatalogueNumber: CatalogueNumber; Year:int; Description: string; }  
+     type Coin = {CatalogueReference: CatalogueReference; Year:int; Description: string; }  
 
      let sameCoin (fst:Coin) (snd:Coin) =
-        same fst.CatalogueNumber snd.CatalogueNumber
+        fst.CatalogueReference |== snd.CatalogueReference

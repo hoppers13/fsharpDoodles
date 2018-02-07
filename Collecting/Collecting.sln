@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2005
+VisualStudioVersion = 15.0.26403.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "AuctionAssistant", "AuctionAssistant\AuctionAssistant.fsproj", "{B165ABA3-ED32-4CE2-8741-312E69712200}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{B5059725-A4FC-4160-9246-CE957D75FA9E}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "AuctionAssitant.Tests", "AuctionAssitant.Tests\AuctionAssitant.Tests.fsproj", "{49D13183-3D8D-4776-BC90-137DC42BFCBE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +19,16 @@ Global
 		{B165ABA3-ED32-4CE2-8741-312E69712200}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B165ABA3-ED32-4CE2-8741-312E69712200}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B165ABA3-ED32-4CE2-8741-312E69712200}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49D13183-3D8D-4776-BC90-137DC42BFCBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49D13183-3D8D-4776-BC90-137DC42BFCBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49D13183-3D8D-4776-BC90-137DC42BFCBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49D13183-3D8D-4776-BC90-137DC42BFCBE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{49D13183-3D8D-4776-BC90-137DC42BFCBE} = {B5059725-A4FC-4160-9246-CE957D75FA9E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {391E6BFD-EE13-4FB7-A89D-710D17152305}
